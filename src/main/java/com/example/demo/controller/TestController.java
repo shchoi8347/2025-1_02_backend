@@ -54,7 +54,7 @@ public class TestController {
         list.add("Hello World! I'm ResponseEntity");
         ResponseDTO<String> reponse = ResponseDTO.<String>builder().data(list).build();
 
-        return ResponseEntity.badRequest().body(reponse);
+        return ResponseEntity.ok().body(reponse);
     }
 }
 
